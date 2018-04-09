@@ -39,8 +39,8 @@
 
 				<div id="inner-header" class="grid-container">
 
-					<?php // to use a image just replace the bloginfo('name') with your img src and remove the surrounding <p> ?>
-					<div id="logo" class="h1 grid-50" itemscope itemtype="http://schema.org/Organization"><a href="<?php echo home_url(); ?>" rel="nofollow"><?php bloginfo('name'); ?></a></div>
+					<?php // outputs the logo added in customize section ?>
+					<div id="logo" class="h1 grid-50" itemscope itemtype="http://schema.org/Organization"><a href="<?php echo home_url(); ?>" rel="nofollow"><?php // bloginfo('name'); ?><?php the_custom_logo(); ?></a></div>
 
 					<?php // if you'd like to use the site description you can un-comment it below ?>
 					<?php // bloginfo('description'); ?>
