@@ -20,6 +20,10 @@
 
 					<p class="source-org copyright">
 						&copy; <?php echo date('Y'); ?> <?php bloginfo( 'name' ); ?>.
+						
+						<?php // remove below text if not required ?>
+						<?php $right = "<span>All rights reserved | </span>"; echo $right; ?>
+						
 						<?php
 							$campaign_source = sanitize_title(get_bloginfo( 'name' ));
 						?>
