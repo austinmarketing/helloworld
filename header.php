@@ -38,10 +38,10 @@
 			<header class="header" id="masthead" role="banner" itemscope itemtype="http://schema.org/WPHeader">
 
 				<div id="inner-header" class="grid-container">
-
-					<?php // outputs the logo added in customize section ?>
-					<div id="logo" class="h1 grid-50" itemscope itemtype="http://schema.org/Organization"><a href="<?php echo home_url(); ?>" rel="nofollow"><?php // bloginfo('name'); ?><?php the_custom_logo(); ?></a></div>
-
+					<?php // logo added via customise section in wordpress?>
+					<div id="logo" class="h1 grid-50" itemscope itemtype="http://schema.org/Organization"><a href="<?php echo home_url(); ?>" rel="nofollow">
+						<?php if (has_custom_logo()): the_custom_logo(); else: bloginfo('name'); endif; ?></a></div>
+						
 					<?php // if you'd like to use the site description you can un-comment it below ?>
 					<?php // bloginfo('description'); ?>
 
