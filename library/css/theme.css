@@ -73,7 +73,9 @@ html {
  * Remove default margin.
  */
 body {
-  margin: 0; }
+  margin: 0; 
+  overflow-x: hidden;
+}
   
 /**
  * Set a container background colour so we can see our grid system and set grid 
