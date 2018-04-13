@@ -38,9 +38,7 @@
 			<header class="header" id="masthead" role="banner" itemscope itemtype="http://schema.org/WPHeader">
 
 				<div id="inner-header" class="grid-container">
-					
-					<nav role="navigation" class="main-menu" itemscope itemtype="http://schema.org/SiteNavigationElement">
-						<?php //* @link http://anythinggraphic.net/responsive-mobile-navigation-techniques ?>
+					<?php //* @link http://anythinggraphic.net/responsive-mobile-navigation-techniques ?>
 						
 						<?php // logo added via customise section in wordpress ?>
 						<div id="logo" class="h1 grid-50" itemscope itemtype="http://schema.org/Organization"><a href="<?php echo home_url(); ?>" rel="nofollow">
@@ -48,7 +46,8 @@
 						
 						<?php // if you'd like to use the site description you can un-comment it below ?>
 						<?php // bloginfo('description'); ?>
-						
+					
+					<nav role="navigation" class="main-menu" itemscope itemtype="http://schema.org/SiteNavigationElement">	
 						<input type='checkbox' id='toggle'/>
 						<label for="toggle" class="toggle" data-open="Main Menu" data-close="Close Menu" onclick></label>
 						<?php wp_nav_menu(array(
