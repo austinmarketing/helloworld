@@ -24,7 +24,7 @@ body { -webkit-animation: bugfix infinite 1s; }
      list-style: none;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1029px) {
      .nav-menu {
           display: none;
           opacity: 0;
@@ -93,7 +93,7 @@ body { -webkit-animation: bugfix infinite 1s; }
      z-index: 2; 
 }
 
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 1029px){
      .nav-menu {
           background: #FFF;
           border-top: 1px solid #14151e;
