@@ -1647,6 +1647,80 @@ you can add resource intensive styles.
   ******************************************************************/
   .wrap {
     width: 1040px; } }
+
+ /******************************
+   RESPONSIVE DROPDOWN MENU
+ ******************************/
+/**
+ * creates a dropdown menu for mobile view
+**/
+    
+ @media only screen and (max-width: 1030px) {
+	 /*Hide dropdown links until they are needed*/
+li ul {
+    display: none;
+}
+/*Make dropdown links vertical*/
+li ul li {
+    display: block;
+    float: none;
+}
+/*Prevent text wrapping*/
+li ul li a {
+    width: auto;
+    min-width: 100px;
+    padding: 0 20px;
+}
+/*Display the dropdown on hover*/
+ul li a:hover + .sub-menu, .sub-menu:hover {
+    display: block;
+}
+
+ul {
+        position: static;
+        display: none;
+    }
+    /*Create vertical spacing*/
+    li {
+        margin-bottom: 1px;
+    }
+    /*Make all menu links full width*/
+    ul li, li a {
+        width: 100%;
+    }
+    
+    ul.sub-menu {
+	    margin-top: -10px;
+    }
+    
+    body {
+	    overflow-x: hidden;
+    }
+    
+    
+    
+    ul li > a:nth-child(1) {
+	 background-image:url('data:image/svg+xml;utf-8,\<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 90.35 174.99"><defs><style>.cls-1{fill:white;}</style></defs><title>jc-arrow-right</title><polygon class="cls-1" points="90.35 87.5 14.63 0 0 12.66 64.77 87.5 0 162.33 14.63 174.99 90.35 87.5 90.35 87.5 90.35 87.5"/></svg>');
+	 background-repeat: no-repeat;
+	 background-position: center; 
+	 background-size: 6px;
+	 background-position-x: 85%; 
+	 }
+	 
+	 ul li > a:nth-child(1):hover {
+	 background-image:url('data:image/svg+xml;utf-8,\<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 174.99 90.35"><defs><style>.cls-1{fill:white;}</style></defs><title>jc-arrow-bottom</title><polygon class="cls-1" points="87.5 90.35 174.99 14.63 162.33 0 87.5 64.77 12.66 0 0 14.63 87.5 90.35 87.5 90.35 87.5 90.35"/></svg>');
+	 background-repeat: no-repeat;
+	 background-position: center; 
+	 background-size: 12px;
+	 background-position-x: 85%; 
+	 }
+	 
+	 ul.sub-menu li a {
+		 background-image: none !important;
+	 }
+
+}
+
 /*********************
 LARGE VIEWING SIZE
 This is for the larger monitors and possibly full screen viewers.
