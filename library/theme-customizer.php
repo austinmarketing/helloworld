@@ -95,6 +95,30 @@ function tcx_register_theme_customizer( $wp_customize ) {
 			'type'     => 'text'
 		)
 	);
+
+	
+	/* Display Email */
+	// Does not show if empty
+	// Use this in the template to output this setting: echo get_theme_mod( 'tcx_email_text' );
+	$wp_customize->add_setting(
+		'tcx_email_text',
+		array(
+			'default'            => '',
+			//'sanitize_callback'  => 'tcx_sanitize_tel',
+			'transport'          => 'postMessage'
+		)
+	);
+	
+	$wp_customize->add_control(
+		'tcx_email_text',
+		array(
+			'section'  => 'tcx_display_options',
+			'label'    => 'Email',
+			'type'     => 'textarea'
+		)
+	);
+	
+	
 	
 	/* Display Disclaimer Text */
 	// Does not show if empty
