@@ -1398,6 +1398,39 @@ FOOTER STYLES
   background-color: #363636;
   color: #6f6f6f; }
 
+ /*********************
+ MENU TOGGLE BUTTON
+*********************/
+.main-menu .toggle {
+	width: auto;
+	margin: 0;
+	float: right;
+	position: absolute;
+	top: 1em;
+	right: 2.5em;
+	font-size: 2em;
+}
+.main-menu .toggle:after {
+	background-color: transparent;
+	content: none;
+	display: none;
+}
+.main-menu .toggle:before {
+  content: "";
+  position: absolute;
+  top: 0.25em;
+  left: 0;
+  width: 1em;
+  height: 0.125em;
+  border-top: 0.375em double #000;
+  border-bottom: 0.125em solid #000;
+}
+
+#menu-main-nav {
+	z-index: 10;
+	margin-top: -15px;
+}
+
 /*
 if you checked out the link above:
 http://www.alistapart.com/articles/organizing-mobile/
@@ -1720,6 +1753,8 @@ ul {
 	 }
 
 }
+
+
 
 /*********************
 LARGE VIEWING SIZE
