@@ -1740,7 +1740,6 @@ ul li a:hover + .sub-menu, .sub-menu:hover {
 
 ul {
         position: static;
-        display: none;
     }
     /*Create vertical spacing*/
     li {
